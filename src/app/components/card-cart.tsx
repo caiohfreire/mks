@@ -27,10 +27,10 @@ export const CardCart = (props: ProductsProps) => {
         <div className="flex flex-col w-full">
           <span className="text-[10px] font-medium sm:hidden md:flex">Qtd:</span>
           <div className="flex items-center justify-between w-full">
-            <div className="flex items-center justify-center border border-[#BFBFBF] rounded-md md:py-0 xl:px-4">
+            <div className="flex items-center justify-center border border-[#BFBFBF] rounded-md md:py-0">
               <button
                 onClick={() => updateProductQuantity(props.id!, props.quantity! - 1)}
-                className="px-3 py-1 font-bold text-xl border-r border-[#BFBFBF] md:px-1"
+                className="px-3 py-1 font-bold text-xl border-r border-[#BFBFBF] md:px-1 xl:px-4"
               >
                 -
               </button>
@@ -39,7 +39,7 @@ export const CardCart = (props: ProductsProps) => {
               </span>
               <button
                 onClick={() => updateProductQuantity(props.id!, props.quantity! + 1)}
-                className="px-3 font-bold text-xl border-l border-[#BFBFBF] md:px-1"
+                className="px-3 font-bold text-xl border-l border-[#BFBFBF] md:px-1 xl:px-4"
               >
                 +
               </button>
