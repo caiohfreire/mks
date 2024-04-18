@@ -22,7 +22,6 @@ export const Cart = ({ open, onClose }: Props) => {
 
   useEffect(() => {
     setIsOpen(true);
-    calculationTotal();
 
     document.body.style.overflow = 'hidden';
 
@@ -77,6 +76,7 @@ export const Cart = ({ open, onClose }: Props) => {
 
                   {cart.map((data => (
                     <CardCart
+                      key={data.id}
                       id={data.id}
                       name={data.name}
                       description={data.description}

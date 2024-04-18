@@ -32,6 +32,7 @@ describe('Cart', () => {
 
     const cards = mockCart.map((item: any) => (
       <CardCart
+        key={item.id}
         name={item.name}
         description={item.description}
         photo={item.photo}
